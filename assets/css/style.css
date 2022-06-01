@@ -567,10 +567,10 @@
     height: 65%;
     position: relative; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .agent1{
-    width: 27%;
+    width: 20%;
     height: 90%;
     display: flex;
     justify-content: center;
