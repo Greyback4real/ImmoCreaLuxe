@@ -38,36 +38,46 @@ $(document).scroll(function(){
    }
 })
 
-
-let aboutInfos = [600, 97, 30];
-function changeValue(max, element, timeout)
+//compteur statistiques
+let cDone = false;
+$(document).scroll(function(){
+   let y = window.scrollY;
+if (y > 1131 && !cDone)
 {
-   setInterval(() => {
-      let elV = element.text();
-      console.log(elV)
-   
-      if (Number(elV) < max)
-      {
-         elV++;
-   
-         element.text(elV);
-      }
+   console.log("ldf,oids,")
+   let aboutInfos = [258, 97, 30];
+   function changeValue(max, element, timeout)
+   {
+      setInterval(() => {
+         let elV = element.text();
       
-   }, timeout);
+         if (Number(elV) < max)
+         {
+            elV++;
+      
+            element.text(elV);
+         }
+         
+      }, timeout);
+   }
+   
+   changeValue(aboutInfos[0]-20, $('#house'), 1);
+   changeValue(aboutInfos[0]-10, $('#house'), 62);
+   changeValue(aboutInfos[0], $('#house'), 80);
+   
+   
+   changeValue(aboutInfos[1]-20, $('#satisfied'), 15);
+   changeValue(aboutInfos[1]-10, $('#satisfied'), 62);
+   changeValue(aboutInfos[1], $('#satisfied'), 80);
+   
+   changeValue(aboutInfos[2]-20, $('#for-sale'), 15);
+   changeValue(aboutInfos[2]-10, $('#for-sale'), 62);
+   changeValue(aboutInfos[2], $('#for-sale'), 80);
+   cDone = true;
 }
 
-changeValue(aboutInfos[0]-20, $('#house'), 2);
-changeValue(aboutInfos[0]-10, $('#house'), 62);
-changeValue(aboutInfos[0], $('#house'), 80);
 
-
-changeValue(aboutInfos[1]-20, $('#satisfied'), 15);
-changeValue(aboutInfos[1]-10, $('#satisfied'), 62);
-changeValue(aboutInfos[1], $('#satisfied'), 80);
-
-changeValue(aboutInfos[2]-20, $('#for-sale'), 15);
-changeValue(aboutInfos[2]-10, $('#for-sale'), 62);
-changeValue(aboutInfos[2], $('#for-sale'), 80);
+})
 });
 
 
