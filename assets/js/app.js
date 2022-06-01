@@ -78,6 +78,51 @@ if (y > 1131 && !cDone)
 
 
 })
+
+$(document).ready(function(){
+
+   console.log('blabla')
+
+   
+   function typeWriter(el, text) {
+       return new Promise((successCallback) => {
+           const textArray = text.split('');
+           el.innerHTML = '';
+           textArray.forEach((letter, i) =>
+               setTimeout(() => (el.innerHTML += letter), 200 * i)
+           )
+       });
+       
+   }
+   typeWriter(twL, "LOUER");
+   typeWriter(twAV, "ACHETER VENDRE");
+   typeWriter(twE, "ESTIMER");
+   });
+   
+
+
+
+
+
+$( document ).scroll(function() {
+   console.log (window.scrollY)
+
+   if (window.scrollY>252){
+       $('.nos').addClass("r-appear");
+      
+   }
+   if (window.scrollY>553){
+       $('.dernieres').addClass("l-appear");
+      
+   }
+   if (window.scrollY>947){
+       $('.ventes').addClass("r-appear");
+      
+   }
+   if (window.scrollY>1286){
+       $('.blabla').addClass("r-appear");
+   }
+ });
 });
 
 
