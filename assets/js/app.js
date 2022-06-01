@@ -123,6 +123,23 @@ $( document ).scroll(function() {
        $('.blabla').addClass("r-appear");
    }
  });
+
+
+ $(document).scroll(function(){
+   let y = window.scrollY;
+   console.log(y)
+   if (y < 600){
+      $('.up_page').css("display", "none");      
+   }
+   else{
+      $('.up_page').css("display","block");
+   }
+})
+
+
+
+
+
 });
 
 

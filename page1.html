@@ -11,6 +11,7 @@
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./assets/js/app.js" defer></script>
 </head>
 <body>
@@ -19,8 +20,8 @@
         <ul class="nav-list">
             <li class="logo"><img src="./assets/img/favicon.png" width="50" height="50" alt="logo"></li>
             <li class="nav-item"><a href="#sectors">Nos Secteurs</a></li>
-            <li class="nav-item"><a href="#">à propos</a></li>
-            <li class="nav-item"><a href="#">Nos agents</a></li>
+            <li class="nav-item"><a href="#stats">à propos</a></li>
+            <li class="nav-item"><a href="#nosagents">Nos agents</a></li>
         </ul>
     </div>
     <div class="content">
@@ -51,7 +52,7 @@
                         <img src="./assets/img/covertouquet1.png" alt="">
                     </div>
                 </div>
-                <div class="stats">
+                <div id="stats" class="stats">
                     <div class="stat">
                         <h2>Maisons vendues</h2>
                         <p  class="stat-text" id="house">0</p>
@@ -124,10 +125,10 @@
           <!--NOS AGENTS-->
         <div class="AGENTS">
             <div class="infos">
-                <h1 class="blabla ">Nous sommes 3 agents immobiliers à votre écoute au :</h1>
-                <p class="blabla"><i class="fa-solid fa-location-dot"></i>&nbsp;2 rue d’Auguste, Arras</p>
-                <p class="blabla"><i class="fa-solid fa-envelope"></i> &nbsp;Immo-crealuxe@contact.fr</p>
-                <p class="blabla"><i class="fa-solid fa-phone"></i> &nbsp;+33 00 65 87 99 01</p>
+                <h1 class="blabla blabla-appear">Nous sommes 3 agents immobiliers à votre écoute au :</h1>
+                <p class="blabla blabla-appear"><i class="fa-solid fa-location-dot"></i>&nbsp;2 rue d’Auguste, Arras</p>
+                <p class="blabla blabla-appear"><i class="fa-solid fa-envelope"></i> &nbsp;Immo-crealuxe@contact.fr</p>
+                <p class="blabla blabla-appear"><i class="fa-solid fa-phone"></i> &nbsp;+33 00 65 87 99 01</p>
             
             </div>
     
@@ -159,6 +160,9 @@
         </div>
         </div>
 
+        <div class="up_page">
+            <i class="fa-solid fa-circle-arrow-up fa-4x" onclick="window.scroll(0,0)"></i>
+        </div>
 
 
     </div>
