@@ -107,19 +107,19 @@ $(document).ready(function(){
 $( document ).scroll(function() {
    console.log (window.scrollY)
 
-   if (window.scrollY>252){
+   if (window.scrollY>2523){
        $('.nos').addClass("r-appear");
       
    }
-   if (window.scrollY>553){
+   if (window.scrollY>2915){
        $('.dernieres').addClass("l-appear");
       
    }
-   if (window.scrollY>947){
+   if (window.scrollY>3417){
        $('.ventes').addClass("r-appear");
       
    }
-   if (window.scrollY>1286){
+   if (window.scrollY>4036){
        $('.blabla').addClass("r-appear");
    }
  });
