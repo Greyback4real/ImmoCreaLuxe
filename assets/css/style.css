@@ -22,6 +22,8 @@
     color: white;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0);
+    
+    transition: all 1s;
 
 }
 
@@ -248,3 +250,353 @@
     align-items: center;
     font-size: 1.5rem;    
 }
+
+ 
+  
+  /*INFOS TEXT*/
+  .TEXT {
+   
+   width: 100%;
+   height: 100%;
+   position: relative;
+   margin-top:30% ;
+  }
+  
+  .Colonne1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Colonne2{
+    width: 100%; 
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Colonne3{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .text1 {  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 24px;
+  color: #000000;
+  max-width: 35%;
+  text-align: center;
+  margin-top: 5%;
+  margin-right:10%;
+  }
+  .text2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 24px;
+    color: #000000;
+    max-width: 35%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left:10%; 
+  }
+  .text3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 24px;
+    color: #000000;
+    max-width: 35%;
+    text-align: center;
+    margin-right: 10%;
+  }
+  
+  .Louer {
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 115px;
+    text-align: center;
+    color: #0B3370;
+    margin-left: 10%; 
+  }
+  .Acheter {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 115px;
+  color: #0B3370;
+  text-align: center;
+  margin-right: 15%;
+  }
+  .Estimer {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 115px;
+  color: #0B3370;
+  text-align: center;
+  margin-left: 10%;
+  }
+  
+  
+  /*NOS DERNIERES VENTES*/
+  .NDV {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 10%;
+  }
+  
+  .compo{
+    max-width: 100%;
+    margin-top: -65%;
+    transition: all 0.5s;
+  }
+  .compo:hover{
+    transform:scale(1.03)
+    
+  }
+  
+  .NOS{
+    width: 100%; 
+    height: 33%; 
+    display: flex; 
+    position: relative;
+  }
+  .nos{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7REM;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: 23%;
+    margin-top: 4%;
+    position: absolute;
+    right: 0;
+  }
+  
+  .r-appear
+  {
+    animation-name: appear;
+    animation-duration: 2s;
+  }
+  .l-appear
+  {
+    animation-name: l-appear-anim;
+    animation-duration: 2s;
+  }
+  
+  @keyframes appear {
+    from {
+      right: -800px;
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    
+    to {
+      right: 0;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes l-appear-anim {
+    from {
+      left: -800px;
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+  
+  .DERNIERES{
+    width: 100%; 
+    height: 33%;
+    display: flex; 
+    position: relative;
+  }
+  .dernieres{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7REM;
+    margin-bottom: 10%;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 5%;
+    position: absolute;
+    left: 0;
+  }
+  
+  .VENTES{
+    width: 100%; 
+    height: 33%;
+    display: flex; 
+    position: relative;
+  }
+  .ventes{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7REM;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: 13%;
+    margin-top: 9%; 
+    position: absolute;
+    right: 0;
+  }
+  
+  
+  
+  /*NOS AGENTS*/
+  .AGENTS{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 10%;
+    
+  }
+  
+  .infos{
+    width: 80%;
+    height: 30%;
+    position: relative; 
+    margin-bottom: 10%;
+    margin-left: 27%;
+    font-size: 20px;
+  }
+  
+  .POSITION{
+    margin-left: 30%;
+  }
+  
+  .blabla{
+    text-align: center;
+    margin-right: 50%;
+    margin-top: 3%;
+    font-family:'Inria Serif'
+    
+  }
+  
+  .blabla-appear
+  {
+    animation-name: appear;
+    animation-duration: 2.5s;
+  }
+  
+  @keyframes blabla-appear {
+    from {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    
+    to {
+      
+      opacity: 1;
+    }
+  }
+  
+  
+  .blabla2  {
+    text-align: center;
+    line-height: 1rem;
+    font-family: 'Roboto';
+  
+  }
+  
+  .liste{
+    width: 100%;
+    height: 65%;
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+  }
+  .agent1{
+    width: 27%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .borderSHADOW{
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px #0B3370;
+    width: 100%;
+    height: 90%; 
+    transition: all 0.5s; 
+  }
+  .borderSHADOW:hover{
+    transform:scale(1.1)  
+  }
+  
+  
+  
+  /*Copyright*/
+  .footer{
+  background-color: #0B3370;
+  padding-top: 61px;
+  width: 1100px;
+  margin-left: -198px;
+  padding-left: 820px;
+  padding-bottom: 45px;
+  color: blanchedalmond;
+  opacity: 50%;
+  
+  }
+  .text-white{
+    color: white;
+  }
