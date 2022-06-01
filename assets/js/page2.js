@@ -32,7 +32,7 @@ $(document).ready(function () {
          houses.innerHTML += `
          <div class="house" >
             <i class="fa-regular fa-heart fa-2xl" style="color:red;"></i>
-            <a href="index.html#"><img class="a_bubble" width="50" height="50" src="./assets/img/nos_agents/${agent[i]}" alt="agent"></a>
+            <a href="page1.html#nosagents"><img class="a_bubble" width="50" height="50" src="./assets/img/nos_agents/${agent[i]}" alt="agent"></a>
             <div class="slide_img slideimg_${i}-${j}_1">
                <img class="house_img" width="500" height="400" src="./assets/img/maisons/${temp[i][j+1]}" alt="house${i}-${j}">
             </div>
