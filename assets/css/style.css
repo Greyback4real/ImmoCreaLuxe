@@ -586,19 +586,39 @@
     height: 90%; 
     transition: all 0.5s; 
   }
-  .borderSHADOW:hover{
-    transform:scale(1.1)  
-  }
+.borderSHADOW:hover{
+  transform:scale(1.1)  
+}
   
-  .infos h1
-  {
-      font-size: 3rem;
-      font-weight: 700;
+.infos h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
 
-  }
-
-  .infos
-  {
-      font-weight: 600;
-  }
+.infos {
+  font-weight: 600;
+}
   
+#Copyright{  
+  justify-content: center;
+}
+
+#legal{
+  padding-right: 1%;
+}
+  
+#reseaux{
+  padding-left: 1%;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  }
+
+.fa-brands {
+  color: #000000;
+  }
