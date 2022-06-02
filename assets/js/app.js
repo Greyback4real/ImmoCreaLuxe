@@ -120,7 +120,7 @@ $( document ).scroll(function() {
       
    }
    if (window.scrollY>4036){
-       $('.blabla').addClass("r-appear");
+       $('.blabla').addClass("blabla-appear");
    }
  });
 

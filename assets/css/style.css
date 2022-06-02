@@ -539,6 +539,12 @@
     transition: all 1s;
     display: none;
 }
+
+.up_page:hover
+{
+   transform: scale(1.2);
+   cursor: pointer;
+}
   
   @keyframes blabla-appear {
     from {opacity: 0;}
