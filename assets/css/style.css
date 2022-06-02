@@ -464,7 +464,7 @@
     font-size: 7REM;
     margin-bottom: 10%;
     margin-right: auto;
-    margin-left: 15%;
+    margin-left: 8%;
     margin-top: 30%;
     position: absolute;
     left: 0;
@@ -509,6 +509,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 20px;
+    opacity: 0;
   }
   
   .POSITION{
@@ -524,8 +525,9 @@
   
   .blabla-appear
   {
-    animation-name: appear;
-    animation-duration: 2.5s;
+    animation-name: blabla-appear-anim;
+    animation-duration: .9s;
+    opacity: 1;
   }
 
   /*retour haut de page*/
@@ -539,14 +541,8 @@
     transition: all 1s;
     display: none;
 }
-
-.up_page:hover
-{
-   transform: scale(1.2);
-   cursor: pointer;
-}
   
-  @keyframes blabla-appear {
+  @keyframes blabla-appear-anim {
     from {opacity: 0;}
     10% {opacity: 0.1;}
     20% {opacity: 0.2;}
@@ -606,18 +602,3 @@
       font-weight: 600;
   }
   
-  /*Copyright*/
-  .footer{
-  background-color: #0B3370;
-  padding-top: 61px;
-  width: 1100px;
-  margin-left: -198px;
-  padding-left: 820px;
-  padding-bottom: 45px;
-  color: blanchedalmond;
-  opacity: 50%;
-  
-  }
-  .text-white{
-    color: white;
-  }

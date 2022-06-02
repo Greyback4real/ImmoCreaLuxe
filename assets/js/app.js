@@ -1,4 +1,16 @@
 $(document).ready(function () {
+
+
+   const elInView = (el, percent = 100) => {
+      const elTop = el[0].getBoundingClientRect().top;
+      console.log(typeof(el[0]))
+      return (
+         elTop <= 
+         ((window.innerHeight || document.documentElement.clientHeight) * 
+         (percent/100))
+         );
+   }
+
    let s = ['Toujours à votre écoute pour', 'Des projets immobilier d\'ambition', 'Des rêves créatifs', 'Des envies de luxe'];
    let count = 0;
    setInterval(() => {
@@ -42,7 +54,7 @@ $(document).scroll(function(){
 let cDone = false;
 $(document).scroll(function(){
    let y = window.scrollY;
-if (y > 1131 && !cDone)
+if (elInView($(".TEXT")) && !cDone)
 {
    console.log("ldf,oids,")
    let aboutInfos = [258, 97, 30];
@@ -79,55 +91,82 @@ if (y > 1131 && !cDone)
 
 })
 
-$(document).ready(function(){
-
-   console.log('blabla')
 
    
-   function typeWriter(el, text) {
-       return new Promise((successCallback) => {
-           const textArray = text.split('');
-           el.innerHTML = '';
-           textArray.forEach((letter, i) =>
-               setTimeout(() => (el.innerHTML += letter), 200 * i)
-           )
-       });
-       
-   }
-   typeWriter(twL, "LOUER");
-   typeWriter(twAV, "ACHETER VENDRE");
-   typeWriter(twE, "ESTIMER");
-   });
+function typeWriter(el, text) {
+      return new Promise((successCallback) => {
+         const textArray = text.split('');
+         el.innerHTML = '';
+         textArray.forEach((letter, i) =>
+            setTimeout(() => (el.innerHTML += letter), 200 * i)
+         )
+      });
+      
+}
    
 
 
 
 
 
-$( document ).scroll(function() {
-   console.log (window.scrollY)
 
-   if (window.scrollY>2523){
-       $('.nos').addClass("r-appear");
-      
-   }
-   if (window.scrollY>2915){
-       $('.dernieres').addClass("l-appear");
-      
-   }
-   if (window.scrollY>3417){
-       $('.ventes').addClass("r-appear");
-      
-   }
-   if (window.scrollY>4036){
-       $('.blabla').addClass("blabla-appear");
-   }
- });
-
-
+let twLDone = false;
+let twAVDone = false;
+let twEDone = false;
  $(document).scroll(function(){
+      if (elInView($(".nos")))
+      {
+         $('.nos').addClass("r-appear");
+      }
+      if (elInView($(".dernieres")))
+      {
+         $('.dernieres').addClass("l-appear");
+      }
+      if (elInView($(".ventes")))
+      {
+         $('.ventes').addClass("r-appear");
+         
+      }
+
+      if (elInView($(".liste")))
+      {
+         $('.infos').addClass('blabla-appear');
+         console.log(typeof($('infos')))
+      }
+
+      if (elInView($("#twL")))
+      {
+         if (!twLDone)
+         {
+            typeWriter(twL, "LOUER");
+            twLDone = true;
+         }
+
+      }
+
+      if (elInView($("#twAV")))
+      {
+         if (!twAVDone)
+         {
+            typeWriter(twAV, "ACHETER");
+            twAVDone = true;
+         }
+
+      }
+      if (elInView($("#twE")))
+      {
+         if (!twEDone)
+         {
+            typeWriter(twE, "ESTIMER");
+            twEDone = true;
+         }
+
+      }
+
+
+
+
    let y = window.scrollY;
-   console.log(y)
    if (y < 600){
       $('.up_page').css("display", "none");      
    }
