@@ -1,0 +1,26 @@
+
+#Copyright{
+    justify-content: center;
+}
+
+#legal{
+    padding-right: 1%;
+    color: #000000;
+}
+
+#reseaux{
+    padding-left: 1%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+}
+
+.fa-brands {
+    color: #000000;
+}

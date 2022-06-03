@@ -1,0 +1,135 @@
+
+
+
+  /*NOS DERNIERES VENTES*/
+  .NDV {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 10%;
+  }
+
+  .compo{
+    max-width: 100%;
+    transition: all 0.5s;
+  }
+  .compo:hover{
+    transform:scale(1.03)
+
+  }
+
+  .NOS{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    position: relative;
+  }
+  .nos{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7REM;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: 23%;
+    margin-top: 8%;
+    position: absolute;
+    right: 0;
+  }
+
+  .r-appear
+  {
+    animation-name: appear;
+    animation-duration: 2s;
+  }
+  .l-appear
+  {
+    animation-name: l-appear-anim;
+    animation-duration: 2s;
+  }
+
+  @keyframes appear {
+    from {
+      right: -800px;
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+
+    to {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes l-appear-anim {
+    from {
+      left: -800px;
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  .DERNIERES{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    position: relative;
+  }
+  .dernieres{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7REM;
+    margin-bottom: 10%;
+    margin-right: auto;
+    margin-left: 8%;
+    margin-top: 30%;
+    position: absolute;
+    left: 0;
+  }
+
+  .VENTES{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    position: relative;
+  }
+  .ventes{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7REM;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: 13%;
+    margin-top: 55%;
+    position: absolute;
+    right: 0;
+  }
