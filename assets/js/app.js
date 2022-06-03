@@ -55,8 +55,7 @@ let cDone = false;
 $(document).scroll(function(){
    let y = window.scrollY;
 if (elInView($(".TEXT")) && !cDone)
-{
-   console.log("ldf,oids,")
+{   
    let aboutInfos = [258, 97, 30];
    function changeValue(max, element, timeout)
    {
@@ -113,7 +112,7 @@ function typeWriter(el, text) {
 let twLDone = false;
 let twAVDone = false;
 let twEDone = false;
- $(document).scroll(function(){
+$(document).scroll(function(){
       if (elInView($(".nos")))
       {
          $('.nos').addClass("r-appear");
@@ -163,10 +162,7 @@ let twEDone = false;
 
       }
 
-
-
-
-   let y = window.scrollY;
+let y = window.scrollY;
    if (y < 600){
       $('.up_page').css("display", "none");      
    }
@@ -175,7 +171,19 @@ let twEDone = false;
    }
 })
 
-
+let b_text;
+$(".s-card").hover(function() {
+  $(this).css("transform", "scale(1.1)");
+  $(this).find(".s-overlay").css("background-color", 'rgba(0, 0, 0, 0.5)');
+  $(this).find('.s-banner').css("right", "0");
+  b_text = $(this).find('.s-banner').text();
+  $(this).find('.s-banner').text("Voir nos maisons");
+}, function() {
+  $(this).css("transform", "scale(1)");
+  $(this).find(".s-overlay").css("background-color", 'rgba(0, 0, 0, 0)');
+  $(this).find('.s-banner').css("right", "60%");
+  $(this).find('.s-banner').text(b_text);
+});
 
 
 

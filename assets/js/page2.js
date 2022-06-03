@@ -23,7 +23,7 @@ $(document).ready(function () {
 
    for(let i = 0; i < temp.length; ++i)
    {
-      housesgrid.innerHTML += `<h1 class="city-title" id="${city[i]}">${city[i]}</h1><div class=houses></div>`;
+      housesgrid.innerHTML += `<h1 class="city-title" id="${city[i].replace(" " , "_")}">${city[i]}</h1><div class=houses></div>`;
       let houses = document.getElementsByClassName('houses')[i];  
       for (let j = 0; j < temp[i].length; ++j)
       {
