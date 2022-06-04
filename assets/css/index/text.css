@@ -107,15 +107,42 @@ margin-left: 10%;
 
 
 
-.Colonne1 , .Colonne2 , .Colonne3{
+.Colonne1 , .Colonne3{
 
 
   flex-direction: column;
   
 }
 
+.Colonne2{
 
+  flex-direction: column-reverse;
+}
 
+#twL{
+
+  margin-left: 0;
+}
+
+#twAV , #twE{
+
+  font-size: 8rem;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+.text3{
+
+  max-width: 80%;
+  margin-right: 0;
+}
+
+.text2{
+
+  max-width: 85%;
+  margin-left: 0;
+}
 
 }
 

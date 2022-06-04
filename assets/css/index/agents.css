@@ -136,3 +136,22 @@
     bottom: -100%;
     z-index: 50;
   }
+
+
+  /*MEDIA QUERRIES*/
+
+@media screen and (max-width: 521px) {
+
+#nosagents{
+
+  display: block;
+}
+
+.agent1{
+  
+  width: 20rem;
+  margin: 0 0 5rem 10rem;
+}
+
+
+}

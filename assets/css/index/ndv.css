@@ -133,3 +133,36 @@
     position: absolute;
     right: 0;
   }
+
+  /*MEDIA QUERRIES*/
+
+@media screen and (max-width: 521px) {
+
+.l-appear , .r-appear{
+
+  position: initial;
+}
+
+.nos{
+  
+  margin:5rem 0 0 12rem;
+}
+
+.dernieres{
+
+  margin: 4rem 0 0 0;
+  
+}
+
+
+.ventes{
+
+  margin-top: 4rem;
+  margin-right: 7rem;
+
+}
+
+}
+
+
+
