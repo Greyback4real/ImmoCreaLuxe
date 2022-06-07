@@ -269,6 +269,8 @@ $(document).scroll(function(){
       $('.up_page').css("display","block");
    }
 })
+
+
     if(window.location.hash !== "")
     {
         window.scroll( 0, $(window.location.hash).offset().top);

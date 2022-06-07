@@ -48,6 +48,22 @@
   transform: scale(1.2);
 }
 
+    /*mentions légales*/
+
+    #titres_mentions{
+
+      font-size: 2em;
+      color: #0B3370;
+      text-decoration: underline;
+      padding: 1em 0;
+      
+    }
+  
+    .mentions{
+  
+      padding: 1em;
+    }
+
 
 /*MEDIA QUERRIES*/
 
