@@ -34,7 +34,7 @@
 .up_page
 {
   position: fixed;
-  bottom: 5%;
+  bottom: 10%;
   right: 3%;
   color: rgba(45, 45, 45, 0.667);
   transition: all 1s;

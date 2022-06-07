@@ -23,4 +23,14 @@
 
 .fa-brands {
     color: #000000;
+    transition: color 1s;
 }
+
+.fa-instagram:hover
+{color: #C32AA3;}
+
+.fa-facebook:hover
+{color: #3B5998;}
+
+.fa-twitter:hover
+{color: #1DA1F2;}
