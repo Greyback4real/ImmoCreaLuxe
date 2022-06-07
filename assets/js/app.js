@@ -1,12 +1,10 @@
 $(document).ready(function () {
 
-
-   const elInView = (el, percent = 100) => {
+   const elInView = (el, percent = 100) =>
+   {
       const elTop = el[0].getBoundingClientRect().top;
       return (
-         elTop <= 
-         ((window.innerHeight || document.documentElement.clientHeight) * 
-         (percent/100))
+         elTop <= ((window.innerHeight || document.documentElement.clientHeight) *  (percent/100))
          );
    }
 
@@ -47,7 +45,7 @@ $(document).scroll(function(){
 
       $('.navbar').css("background-color","rgba(0, 0, 0, 0)");
    }
-})
+});
 
 //compteur statistiques
 let cDone = false;
@@ -64,13 +62,10 @@ if (elInView($(".TEXT")) && !cDone)
          if (Number(elV) < max)
          {
             elV++;
-      
             element.text(elV);
          }
-         
       }, timeout);
    }
-   
    changeValue(aboutInfos[0]-20, $('#house'), 1);
    changeValue(aboutInfos[0]-10, $('#house'), 62);
    changeValue(aboutInfos[0], $('#house'), 80);
@@ -91,20 +86,14 @@ if (elInView($(".TEXT")) && !cDone)
 
 
    
-function typeWriter(el, text) {
-      return new Promise((successCallback) => {
-         const textArray = text.split('');
-         el.innerHTML = '';
-         textArray.forEach((letter, i) =>
-            setTimeout(() => (el.innerHTML += letter), 200 * i)
-         )
-      });
-      
+function typeWriter(el, text)
+{
+    const textArray = text.split('');
+    el.innerHTML = '';
+    textArray.forEach((letter, i) =>
+        setTimeout(() => (el.innerHTML += letter), 200 * i)
+    );
 }
-   
-
-
-
 
 
 
@@ -112,25 +101,6 @@ let twLDone = false;
 let twAVDone = false;
 let twEDone = false;
 $(document).scroll(function(){
-      if (elInView($(".nos")))
-      {
-         $('.nos').addClass("r-appear");
-      }
-      if (elInView($(".dernieres")))
-      {
-         $('.dernieres').addClass("l-appear");
-      }
-      if (elInView($(".ventes")))
-      {
-         $('.ventes').addClass("r-appear");
-         
-      }
-
-      if (elInView($(".liste")))
-      {
-         $('.infos').addClass('blabla-appear');
-      }
-
       if (elInView($("#twL")))
       {
          if (!twLDone)
@@ -160,14 +130,33 @@ $(document).scroll(function(){
 
       }
 
-let y = window.scrollY;
-   if (y < 600){
-      $('.up_page').css("display", "none");      
-   }
-   else{
-      $('.up_page').css("display","block");
-   }
-})
+
+        if (elInView($(".nos")))
+        {
+            $('.nos').addClass("r-appear");
+        }
+        if (elInView($(".dernieres")))
+        {
+            $('.dernieres').addClass("l-appear");
+        }
+        if (elInView($(".ventes")))
+        {
+            $('.ventes').addClass("r-appear");
+
+        }
+        if (elInView($(".liste")))
+        {
+            $('.infos').addClass('blabla-appear');
+        }
+
+    let y = window.scrollY;
+       if (y < 600){
+          $('.up_page').css("display", "none");
+       }
+       else{
+          $('.up_page').css("display","block");
+       }
+});
 
 let b_text;
 $(".s-card").hover(function() {
