@@ -175,7 +175,7 @@ $(document).ready(function () {
       for (let j = 0; j < galerie[city[i]].length; ++j)
       {
 
-        let rnd_price = String(Math.floor(Math.random() * (4000000 - 1000000 + 1)) + 1000000).slice(0, 4);
+        let rnd_price = String(Math.floor(Math.random() * (4000 - 1000 + 1)) + 1000);
          let rnd_area = Math.floor(Math.random() * (300 - 100 + 1)) + 100;
          houses.innerHTML += `
          <div class="house" >
@@ -193,7 +193,7 @@ $(document).ready(function () {
             <div class="arrow_container a_left aleft_${i}-${j}"><i class="fa-solid fa-chevron-left fa-3x slide_arrow" style="color: white;"></i></div>
             <div class="arrow_container a_right aright_${i}-${j}"><i class="fa-solid fa-chevron-right fa-3x slide_arrow" style="color: white;"></i></div>
             <div class="houseinfo">
-               <p class="price"> Prix: ${rnd_price}000€</p>
+               <p class="price"> Prix: ${rnd_price.slice(0,1)}.${rnd_price.slice(1,4)}.000€</p>
                <p class="town"> Ville: ${city[i]}</p>
                <p class="area"> Surface: ${rnd_area}m²</p>
             </div>
