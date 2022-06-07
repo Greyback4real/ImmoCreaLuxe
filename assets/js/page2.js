@@ -1,7 +1,4 @@
 $(document).ready(function () {
-
-
-
   let galerie = {
     "Le Touquet": [
       [
@@ -161,12 +158,9 @@ $(document).ready(function () {
     ]
   }
 
-   let housesgrid = document.getElementsByClassName('housesgrid')[0];
-
-
-
-   let city = ["Lille", "Arras", "Le Touquet"]
-   let agent = ["louthen1.jpg","genardiz1.jpg","joumhy1.jpg"]
+  let housesgrid = document.getElementsByClassName('housesgrid')[0];
+  let city = ["Lille", "Arras", "Le Touquet"];
+  let agent = ["louthen1.jpg","genardiz1.jpg","joumhy1.jpg"];
 
    for(let i = 0; i < city.length; ++i)
    {
