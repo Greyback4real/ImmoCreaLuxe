@@ -3,7 +3,6 @@ $(document).ready(function () {
 
    const elInView = (el, percent = 100) => {
       const elTop = el[0].getBoundingClientRect().top;
-      console.log(typeof(el[0]))
       return (
          elTop <= 
          ((window.innerHeight || document.documentElement.clientHeight) * 
@@ -130,7 +129,6 @@ $(document).scroll(function(){
       if (elInView($(".liste")))
       {
          $('.infos').addClass('blabla-appear');
-         console.log(typeof($('infos')))
       }
 
       if (elInView($("#twL")))
